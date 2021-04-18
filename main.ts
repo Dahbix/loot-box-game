@@ -8,13 +8,13 @@ sprites.onDestroyed(SpriteKind.Box, function (sprite) {
     _1Code = "nth1"
     _2Code = "nth2"
     _3Code = "nth3"
-    timer.after(500, function () {
+    timer.after(1000, function () {
         Prize_Generate(_1Prize, _1TextSprite)
     })
-    timer.after(1500, function () {
+    timer.after(2000, function () {
         Prize_Generate(_2Prize, _2TextSprite)
     })
-    timer.after(2500, function () {
+    timer.after(3000, function () {
         Prize_Generate(_3Prize, _3TextSprite)
     })
 })
