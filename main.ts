@@ -5,13 +5,13 @@ namespace SpriteKind {
     export const invis = SpriteKind.create()
 }
 sprites.onDestroyed(SpriteKind.Box, function (sprite) {
-    timer.after(2000, function () {
+    timer.after(500, function () {
         Prize_Generate(_1Prize, _1TextSprite)
     })
-    timer.after(3000, function () {
+    timer.after(1500, function () {
         Prize_Generate(_2Prize, _2TextSprite)
     })
-    timer.after(4000, function () {
+    timer.after(2500, function () {
         Prize_Generate(_3Prize, _3TextSprite)
     })
     _1Code = "nth1"
