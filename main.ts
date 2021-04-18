@@ -1450,6 +1450,9 @@ if (blockSettings.exists("credits")) {
 } else if (!(blockSettings.exists("credits"))) {
     info.setScore(3)
 }
+/**
+ * TOP SECRET!!! PLEASE DO NOT OPEN!!! CODES UNDERNEATH
+ */
 game.onUpdate(function () {
     if (Collection_Open) {
         if (Current < 0) {
@@ -1508,6 +1511,9 @@ game.onUpdate(function () {
         }
     }
 })
+/**
+ * If you somehow found this code please do not look at it! There is codes that are secret!
+ */
 game.onUpdateInterval(500, function () {
     blockSettings.writeNumber("credits", info.score())
 })
