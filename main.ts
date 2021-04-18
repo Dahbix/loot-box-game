@@ -5,18 +5,18 @@ namespace SpriteKind {
     export const invis = SpriteKind.create()
 }
 sprites.onDestroyed(SpriteKind.Box, function (sprite) {
+    timer.after(2000, function () {
+        Prize_Generate(_1Prize, _1TextSprite)
+    })
+    timer.after(3000, function () {
+        Prize_Generate(_2Prize, _2TextSprite)
+    })
+    timer.after(4000, function () {
+        Prize_Generate(_3Prize, _3TextSprite)
+    })
     _1Code = "nth1"
     _2Code = "nth2"
     _3Code = "nth3"
-    timer.after(1000, function () {
-        Prize_Generate(_1Prize, _1TextSprite)
-    })
-    timer.after(2000, function () {
-        Prize_Generate(_2Prize, _2TextSprite)
-    })
-    timer.after(3000, function () {
-        Prize_Generate(_3Prize, _3TextSprite)
-    })
 })
 controller.B.onEvent(ControllerButtonEvent.Pressed, function () {
     info.stopCountdown()
@@ -1329,15 +1329,15 @@ let Image2: Image = null
 let Random_Number = 0
 let mySprite: Sprite = null
 let Collection_Open = false
+let _3Code = ""
+let _2Code = ""
+let _1Code = ""
 let _3TextSprite: Sprite = null
 let _3Prize: Sprite = null
 let _2TextSprite: Sprite = null
 let _2Prize: Sprite = null
 let _1TextSprite: Sprite = null
 let _1Prize: Sprite = null
-let _3Code = ""
-let _2Code = ""
-let _1Code = ""
 let Item_Names: string[] = []
 let Your_Items: Image[] = []
 let Add_Credits_Sprite: Sprite = null
